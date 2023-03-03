@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreeSql" Version="3.2.690" />
+    <PackageReference Include="FreeSql.Provider.MySql" Version="3.2.690" />
+    <PackageReference Include="FreeSql.Provider.Sqlite" Version="3.2.690" />
+  </ItemGroup>
+
+</Project>

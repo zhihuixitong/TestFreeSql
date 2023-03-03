@@ -1,0 +1,12 @@
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\bin\Debug\net5.0\Db.deps.json
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\bin\Debug\net5.0\Db.dll
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\bin\Debug\net5.0\ref\Db.dll
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\bin\Debug\net5.0\Db.pdb
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.csproj.AssemblyReference.cache
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.AssemblyInfoInputs.cache
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.AssemblyInfo.cs
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.csproj.CoreCompileInputs.cache
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.dll
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\ref\Db.dll
+C:\Users\11747\source\repos\TestFreeSql\Code\TestFreeSql\Db\obj\Debug\net5.0\Db.pdb
