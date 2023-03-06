@@ -37,8 +37,9 @@ namespace TestFreeSql
             Func<IServiceProvider, IFreeSql> fsql = r =>
             {
                 IFreeSql fsql = new FreeSql.FreeSqlBuilder()
-                    .UseConnectionString(FreeSql.DataType.MySql, @"Data Source=localhost;Database=alan;User ID=root;Password=123456;pooling=true;port=3306;sslmode=none;CharSet=utf8;")
+                    .UseConnectionString(FreeSql.DataType.MySql, @"Data Source=localhost;Database=testfreesql;User ID=root;Password=123456;pooling=true;port=3306;sslmode=none;CharSet=utf8;")
                     .UseMonitorCommand(cmd => Console.WriteLine($"Sql：{cmd.CommandText}"))//监听SQL语句
+                    // .UseSlave(@"Data Source = localhost; Database = testfreesql1; User ID = root; Password = 123456; pooling = true; port = 3306; sslmode = none; CharSet = utf8; ", @"Data Source=localhost;Database=testfreesql2;User ID=root;Password=123456;pooling=true;port=3306;sslmode=none;CharSet=utf8;")
                     .UseAutoSyncStructure(true) //自动同步实体结构到数据库，FreeSql不会扫描程序集，只有CRUD时才会生成表。
                     .Build();
                 return fsql;
@@ -70,7 +71,7 @@ namespace TestFreeSql
             using (IServiceScope serviceScope = app.ApplicationServices.CreateScope())
             {
                 var fsql = serviceScope.ServiceProvider.GetRequiredService<IFreeSql>();
-                fsql.CodeFirst.SyncStructure(typeof(Blog));//Topic 为要同步的实体类
+                fsql.CodeFirst.SyncStructure(typeof(Blog), typeof(User), typeof(AsTableLog));//Topic 为要同步的实体类
             }
 
         }

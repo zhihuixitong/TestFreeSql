@@ -126,8 +126,8 @@
           "Microsoft.Extensions.Configuration.KeyPerFile": "5.0.0.0",
           "Microsoft.Extensions.Configuration.UserSecrets": "5.0.0.0",
           "Microsoft.Extensions.Configuration.Xml": "5.0.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0.0",
-          "Microsoft.Extensions.DependencyInjection": "5.0.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions.Reference": "5.0.0.0",
+          "Microsoft.Extensions.DependencyInjection.Reference": "5.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "5.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "5.0.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0.0",
@@ -326,6 +326,22 @@
           "TestFreeSql.dll": {}
         }
       },
+      "FreeScheduler/1.0.7": {
+        "dependencies": {
+          "FreeSql": "3.2.690",
+          "IdleBus": "1.5.2",
+          "WorkQueue": "1.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeScheduler.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FreeScheduler.dll": {}
+        }
+      },
       "FreeSql/3.2.690": {
         "runtime": {
           "lib/netstandard2.1/FreeSql.dll": {
@@ -340,6 +356,43 @@
         },
         "compile": {
           "lib/netstandard2.1/FreeSql.dll": {}
+        }
+      },
+      "FreeSql.Cloud/1.6.3": {
+        "dependencies": {
+          "FreeScheduler": "1.0.7",
+          "FreeSql.DbContext": "3.2.690",
+          "IdleBus": "1.5.2",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.Cloud.dll": {
+            "assemblyVersion": "1.6.3.0",
+            "fileVersion": "1.6.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FreeSql.Cloud.dll": {}
+        }
+      },
+      "FreeSql.DbContext/3.2.690": {
+        "dependencies": {
+          "FreeSql": "3.2.690",
+          "Microsoft.Extensions.DependencyInjection": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/FreeSql.DbContext.dll": {
+            "assemblyVersion": "3.2.690.0",
+            "fileVersion": "3.2.690.0"
+          }
+        },
+        "resources": {
+          "lib/net5.0/zh-Hans/FreeSql.DbContext.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        },
+        "compile": {
+          "lib/net5.0/FreeSql.DbContext.dll": {}
         }
       },
       "FreeSql.Provider.MySql/3.2.690": {
@@ -381,6 +434,17 @@
         },
         "compile": {
           "lib/net5.0/Google.Protobuf.dll": {}
+        }
+      },
+      "IdleBus/1.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/IdleBus.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/IdleBus.dll": {}
         }
       },
       "K4os.Compression.LZ4/1.2.6": {
@@ -427,6 +491,12 @@
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
+      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {},
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
@@ -473,6 +543,17 @@
           "lib/net5.0/MySql.Data.dll": {},
           "lib/net5.0/Ubiety.Dns.Core.dll": {},
           "lib/net5.0/ZstdNet.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Portable.BouncyCastle/1.9.0": {
@@ -633,9 +714,22 @@
           "System.Drawing.Common": "4.7.0"
         }
       },
+      "WorkQueue/1.3.0": {
+        "runtime": {
+          "lib/netstandard2.0/WorkQueue.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/WorkQueue.dll": {}
+        }
+      },
       "Db/1.0.0": {
         "dependencies": {
           "FreeSql": "3.2.690",
+          "FreeSql.Cloud": "1.6.3",
+          "FreeSql.DbContext": "3.2.690",
           "FreeSql.Provider.MySql": "3.2.690",
           "FreeSql.Provider.Sqlite": "3.2.690"
         },
@@ -1192,13 +1286,13 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.DependencyInjection/5.0.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.Extensions.DependencyInjection.dll": {}
         },
@@ -2352,12 +2446,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "FreeScheduler/1.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dWaazOlaftdgKuJOJp7OLdsvQavd5cco5tY6Zqm1dS0J4lyPLhyiT0vdg7C83FIFKRpOoo4tzIn6u6RgW4TGJg==",
+      "path": "freescheduler/1.0.7",
+      "hashPath": "freescheduler.1.0.7.nupkg.sha512"
+    },
     "FreeSql/3.2.690": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-1+BsiCgIp1u7lGe9wBIB6OBfNKOipB4FRBTOvwk4e+TI1IrUz6khkSkp0gxrHVaYDkIJWpWGYtS0crhxFEUxkw==",
       "path": "freesql/3.2.690",
       "hashPath": "freesql.3.2.690.nupkg.sha512"
+    },
+    "FreeSql.Cloud/1.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ybv+wTM7VfB1hfbsPGneYoJ2g805W7NBqv5z9ZZWeS8laD3i4tfM16M3EKCR6KnmfnGKMjYxT58K6aPWse8iLw==",
+      "path": "freesql.cloud/1.6.3",
+      "hashPath": "freesql.cloud.1.6.3.nupkg.sha512"
+    },
+    "FreeSql.DbContext/3.2.690": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CtAgCUEUx73tEVVezrjZ8kWqCY8rVoftLDbUMuiJhOWlp25ZWneXPLIqgNzaNvB09AV4OVrxBKhQ2NVr0ofF1A==",
+      "path": "freesql.dbcontext/3.2.690",
+      "hashPath": "freesql.dbcontext.3.2.690.nupkg.sha512"
     },
     "FreeSql.Provider.MySql/3.2.690": {
       "type": "package",
@@ -2379,6 +2494,13 @@
       "sha512": "sha512-fd07/ykL4O4FhqrZIELm5lmiyOHfdPg9+o+hWr6tcfRdS7tHXnImg/2wtogLzlW2eEmr0J7j6ZrZvaWOLiJbxQ==",
       "path": "google.protobuf/3.19.4",
       "hashPath": "google.protobuf.3.19.4.nupkg.sha512"
+    },
+    "IdleBus/1.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oknn4KsiPxWRXAr081IngmpRc9za+DHlTNwL28P6QoAhsciYdcU0tDCiGpNB0FZhxT7DhI9wTK2atHYuWw/jNg==",
+      "path": "idlebus/1.5.2",
+      "hashPath": "idlebus.1.5.2.nupkg.sha512"
     },
     "K4os.Compression.LZ4/1.2.6": {
       "type": "package",
@@ -2408,6 +2530,20 @@
       "path": "microsoft.extensions.apidescription.server/3.0.0",
       "hashPath": "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
       "serviceable": true,
@@ -2435,6 +2571,13 @@
       "sha512": "sha512-SRoxG9ASRQrqL/JKU9KxaWfkmWtBuw5rA7d9G34Z1w4Aq5YwvxIjuGDOkUSk/H6VOmlZ/wywgBSX9S6btbUAYg==",
       "path": "mysql.data/8.0.30",
       "hashPath": "mysql.data.8.0.30.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",
@@ -2561,6 +2704,13 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "WorkQueue/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gs01Z2+uwtU23WJN67uMdo1819YcFdT1LGeRnONXb0BV79lxbMwEdsieTQbTFpGDvRSXDB7SBMDO68zTnB9mMQ==",
+      "path": "workqueue/1.3.0",
+      "hashPath": "workqueue.1.3.0.nupkg.sha512"
     },
     "Db/1.0.0": {
       "type": "project",
@@ -3022,12 +3172,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.DependencyInjection/5.0.0.0": {
+    "Microsoft.Extensions.DependencyInjection.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

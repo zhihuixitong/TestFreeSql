@@ -47,6 +47,14 @@
               "target": "Package",
               "version": "[3.2.690, )"
             },
+            "FreeSql.Cloud": {
+              "target": "Package",
+              "version": "[1.6.3, )"
+            },
+            "FreeSql.DbContext": {
+              "target": "Package",
+              "version": "[3.2.690, )"
+            },
             "FreeSql.Provider.MySql": {
               "target": "Package",
               "version": "[3.2.690, )"

@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="FreeSql" Version="3.2.690" />
+    <PackageReference Include="FreeSql.Cloud" Version="1.6.3" />
+    <PackageReference Include="FreeSql.DbContext" Version="3.2.690" />
     <PackageReference Include="FreeSql.Provider.MySql" Version="3.2.690" />
     <PackageReference Include="FreeSql.Provider.Sqlite" Version="3.2.690" />
   </ItemGroup>

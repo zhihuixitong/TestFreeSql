@@ -29,9 +29,11 @@ namespace TestFreeSql.Controllers
         [HttpGet]
         public   IEnumerable<WeatherForecast> Get()
         {
+            //插入单一数据
+           var save= _freeSql.Insert<Blog>(new Blog() {  Rating = 1, Url = "123" }).ExecuteAffrows();
 
-           var save= _freeSql.Insert<Blog>(new Blog() { BlogId = 1, Rating = 1, Url = "123" }).ExecuteAffrows();
-
+            var select1 = _freeSql.Select<Blog>().Where(x=>x.BlogId==1).ToList();
+            var select2 = _freeSql.Select<Blog>().ToList();
 
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

@@ -1,19 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "p3p829sa+XQv4MIbmnbR4JTYnBlUVlAAauSsrrXKS7NEPt7yU5yvkPdq33dXJBgHxUIgPI16MK2KnSpGMRX9Og==",
+  "dgSpecHash": "2MUgMjxexczRkcv9nDgmSHtj7RRI8ibHvUfBvPSyFJMCfL1lgjfvxa2LJsnn/JKMRuTU1NxmcfSqXPM+OmDe4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\11747\\source\\repos\\TestFreeSql\\Code\\TestFreeSql\\Db\\Db.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\11747\\.nuget\\packages\\freescheduler\\1.0.7\\freescheduler.1.0.7.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\freesql\\3.2.690\\freesql.3.2.690.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\freesql.cloud\\1.6.3\\freesql.cloud.1.6.3.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\freesql.dbcontext\\3.2.690\\freesql.dbcontext.3.2.690.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\freesql.provider.mysql\\3.2.690\\freesql.provider.mysql.3.2.690.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\freesql.provider.sqlite\\3.2.690\\freesql.provider.sqlite.3.2.690.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\idlebus\\1.5.2\\idlebus.1.5.2.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\mysql.data\\8.0.30\\mysql.data.8.0.30.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
@@ -27,7 +34,8 @@
     "C:\\Users\\11747\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\11747\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
-    "C:\\Users\\11747\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\11747\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\11747\\.nuget\\packages\\workqueue\\1.3.0\\workqueue.1.3.0.nupkg.sha512"
   ],
   "logs": []
 }
