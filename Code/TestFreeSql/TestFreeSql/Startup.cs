@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace TestFreeSql
 {
+    //demo作者微信（qq）欢迎交流学习：842725037
     public class Startup
     {
         public Startup(IConfiguration configuration)

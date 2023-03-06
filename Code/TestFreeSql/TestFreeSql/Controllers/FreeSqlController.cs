@@ -16,6 +16,7 @@ namespace TestFreeSql.Controllers
     public class FreeSqlController : ControllerBase
     {
         //官方文档：https://freesql.net/guide/getting-started.html
+        //demo作者微信（qq）：842725037
 
 
         private readonly ILogger<FreeSqlController> _logger;
@@ -170,22 +171,7 @@ namespace TestFreeSql.Controllers
             return "123";
         }
 
-        /// <summary>
-        /// 分布式事务:执行
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public async Task<string> TestFreeSqlCloud3(string id)
-        {
-            var sql = _cache.Get<string>(id) ?? "";
 
-
-            List<dynamic> t13 = _freeSql.Ado.Query<dynamic>(sql);
-
-            _cache.Remove(id);
-
-            return "123";
-        }
 
 
     }
